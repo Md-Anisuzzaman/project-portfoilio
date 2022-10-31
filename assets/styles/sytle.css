@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --montserrat: 'Montserrat', sans-serif;
+    --opensans: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.container {
+    width: 992px;
+    margin: auto;
+}
+
+.logo {
+    text-align: center;
+    background-color: rgb(218, 212, 211);
+}
+
+.logo img {
+    height: 80px;
+}
+
+.ul__list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0px;
+}
+
+.ul__list li,
+a {
+    font-size: 20px;
+    font-family: var(--montserrat);
+    list-style: none;
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+
+}
+
+.ul__list li,
+a:hover {
+    transition-duration: .3s;
+    color: orangered;
+}
+
+/* background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("https://kusalthiwanka.github.io/images/kusal.jpg"); */
+
+.banner__body {
+    background: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner__content {
+    text-align: right;
+    color: aliceblue;
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.banner__content h1 {
+    font-family: var(--montserrat);
+    font-size: 42px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+
+}
+
+.banner__content p {
+    width: 50%;
+    margin-left: auto;
+    font-family: var(--opensans);
+    padding: 20px 0;
+    padding-bottom: 40px;
+}
+
+.banner__content a {
+    background-color: black;
+    border-radius: 25px;
+    padding: 15px 25px;
+    display: inline-block;
+    color: aliceblue;
+    font-family: var(--montserrat);
+}
+
+.banner__content a:hover {
+    background-color: aliceblue;
+    color: rgb(39, 38, 38);
+}
+
+.menue__header {
+    text-align: center;
+    padding: 90px 0px;
+}
+
+.menue__header h1 {
+    font-family: var(--montserrat);
+    font-size: 32px;
+}
+
+.menue__header p {
+    margin-top: 20px;
+    font-family: var(--opensans);
+}
+
+.menue__lists {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    text-align: center;
+
+}
+
+.menue__item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.menue__item:hover {
+    background-color: rgb(14, 12, 12);
+    color: white;
+}
+
+.menue__item i {
+    font-size: 35px;
+    color: rgb(75, 201, 223);
+    padding: 10px 0px;
+}
+
+/* .menue__item i:hover {
+    color: white;
+} */
+
+.menue__item h1 {
+    font-size: 22px;
+    font-family: var(--montserrat);
+    padding: 20px 0px;
+}
+
+.menue__item p {
+    font-family: var(--opensans);
+    padding-bottom: 8px;
+}
+
+.about {
+    padding: 80px 0px;
+}
+
+.about__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.about__image img {
+    width: 350px;
+    border-radius: 5px;
+}
+
+.about__description {}
+
+.about__description h1 {
+    font-family: var(--montserrat);
+}
+
+.about__description p {
+    font-family: var(--opensans);
+    color: rgb(49, 49, 49);
+    padding-bottom: 20px;
+}
