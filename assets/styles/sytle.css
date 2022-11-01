@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: aliceblue;
+    background-color: #f5f5f5;
 }
 
 .container {
@@ -32,7 +32,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 15px 0px;
+    padding: 20px 0px;
 }
 
 .ul__list li,
@@ -54,10 +54,11 @@ a:hover {
 /* background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("https://kusalthiwanka.github.io/images/kusal.jpg"); */
 
 .banner__body {
-    background: url("../images/banner.jpg");
+    background: linear-gradient(rgba(48, 45, 45, 0.5), rgb(49 49 49)), url("../images/banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .banner__content {
@@ -137,10 +138,6 @@ a:hover {
     padding: 10px 0px;
 }
 
-/* .menue__item i:hover {
-    color: white;
-} */
-
 .menue__item h1 {
     font-size: 22px;
     font-family: var(--montserrat);
@@ -164,11 +161,9 @@ a:hover {
 }
 
 .about__image img {
-    width: 350px;
-    border-radius: 5px;
+    width: 450px;
+    border-radius: 10px;
 }
-
-.about__description {}
 
 .about__description h1 {
     font-family: var(--montserrat);
@@ -178,4 +173,82 @@ a:hover {
     font-family: var(--opensans);
     color: rgb(49, 49, 49);
     padding-bottom: 20px;
+}
+
+.project__wrapping {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.project__heading {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.project__heading h1 {
+    font-family: var(--montserrat);
+    font-size: 32px;
+}
+
+.project__heading p {
+    font-family: var(--opensans);
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.project__wrapping div img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.contact__body {
+    /* display: flex;
+    justify-content: space-between; */
+
+}
+
+.contact__form {
+    display: flex;
+}
+
+.footer__content {
+    background-color: rgb(47, 47, 71);
+    padding: 50px 0px;
+
+}
+
+.footer__content p {
+    text-align: center;
+    font-family: var(--opensans);
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer__content ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer__content ul li {
+    list-style: none;
+}
+
+.footer__content ul li a i {
+    /* display: inline-block; */
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    color: black;
+    background-color: white;
+}
+
+.footer__content ul li a i:hover {
+    color: white;
+    background-color: orangered;
+    transition-duration: .3s;
 }
